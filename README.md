@@ -1,5 +1,5 @@
 # fit1047-introduction-to-computer-systems-networks-and-security
-FIT1047 Introduction to Computer Systems, Networks and Security notes
+FIT1047 Introduction to Computer Systems, Networks and Security notes, batch of Semester 2, 2018.
 
 ## Notes 
 [notes](notes) here are written by me. *Do take note of any inaccuracies made by me.*
