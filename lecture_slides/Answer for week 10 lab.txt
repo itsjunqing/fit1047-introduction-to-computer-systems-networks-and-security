@@ -1,0 +1,61 @@
+/24 is used to identify the subnet for the first 24 bits, known as subnet mask
+130.196.13.
+130 :8 bits = 1000 0010 
+196 : 8 bits = 1100 0000
+13 : 8 bits = 0000 1101
+5 : 8 bits = 0000 0101
+
+/24 means from 1000 0010 to 0000 1101 
+first 24 bits is used to identify the subnet, it can't be used as destination purpose
+
+Can only use the final 8 bits for the device
+Total number of devices = 2^8 - 2
+00 is for router / network
+11 is for subnet
+
+
+If the first 24 bits are different, packets must sent to the router in order to access different devices with different subnet. 
+
+24 bits can be represented as: 11111111 11111111 11111111 00000000
+Or represented as decimals: 255.255.255.0 (total up the decimals values the binary to get the value)
+
+Question 1
+/22 represented as 22 bits: 11111111 11111111 11111100 00000000
+Decimals representation: 255.255.252.0
+
+Question 2
+255.255.0.0 represented as bits: 11111111 11111111 00000000 00000000
+16 bits: /16
+
+Question 3
+192.168.131.3/18
+Bits representation: 11000000 10101000 10000011 00000011
+192.168.155.42/18
+Bits representation: 11000000 10101000 10011011 00101010
+255.255.192.0
+Bits representation: 11111111 11111111 11000000 00000000
+The boundaries for subnetwork must stop at 18 bits.
+First 18 bits are network, the remaining 14 bits are hosts.
+****(2 ^ 14 - 2) hosts available.****
+Both IP have the same for 18 bits, so they are having the same subnet mask.
+
+# Number of hosts available = 2^n - 2, where n is the number of bits for subnet
+# subtract 2 is due below
+***00 is for network address (first address)***
+***11 is for broadcast address (last address)***
+# 132.145.0.0
+# 132.145.255.255
+# subtract the 0.0 and 255.255 
+
+Question 4
+192.168.211.3/18
+Bits representation: 11000000 10101000 11010011 00000011
+192.168.155.42/18
+Bits representation: 11000000 10101000 10011011 00101010
+255.255.192.0
+Bits representation: 11111111 11111111 11000000 00000000
+Boundaries for subnetwork is 18 bits.
+Both IPs have different first 18 bits, so they are in different subnet.
+ 
+
+

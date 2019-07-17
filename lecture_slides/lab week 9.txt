@@ -1,0 +1,22 @@
+1. Bit rate, bandwidth
+- Bit rate is the number of bits that can be transmitted in one unit of time
+- example of 7Mbps, number of bits transmitted is 7 million bits every second, bit rate is the 7 million bits per second 
+- Bandwidth is the maximum amount of bit rate that can be produced
+- bandwidth is a range of frequencies to be transmitted during the process
+- Amount of frequency that is used during the transfer rate
+- How much frequency that I have to transmit data
+- higher frequency transmit more data in a faster way
+
+
+2. Latency
+- a measurement of how long it takes to transmit a particular data from one source to its destination
+- higher latency means it takes longer time for loading/downloading/transmitting data
+- lower latency means it takes shorter time to load / transmit data
+- amount of time taken to transmit a message from a sender to receiver
+
+
+3. Network layers, PDU, encapsulation
+- Network layers represent a routing where it determines which path a packet should go in order to transmit a data from one source to its destination, usually they transmit through intermediate routers 
+- PDU 
+- encapsulation is the process of taking data from one protocol and translating it into another protocol, so the data can continue across a network. more of like covering an envelope with another envelope. 
+ - Encapsulation happens at all layers. Encapsulating the dat so that it can be used by the protocol. Generally most machines use ipv4.`

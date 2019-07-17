@@ -1,0 +1,32 @@
+Task 1(1):
+1. Process is the execution of a program. It takes an instruction from the user and execute upon that instruction. The time when the OS receives the instruction to execute a program until it completes the execution, that's called process. 
+
+Program is an application that runs in an OS. It's a set of instructions written by the user to be executed. It has a special function (lines of code) are organized and carried out and can be wrriten in differnet langauges. When there's processor, the CPu runs a single process or run it ton the CPU of one computer or do it when you have run it on the CPU. PArallel programming where you divide on many computers.. 
+
+
+Task 1(2):
+1. The CPU is switched into kernel mode
+2. It jumps to the interrupt handler for software interrupts
+3. The interrupt handler saves the process context into memory (i.e., the current state of registers
+etc)
+4. The interrupt handler makes an indirect jump to entry i of the system call table, if i was the number
+that the user mode application stored in the register before triggering the interrupt.
+5. The code for the system call handler is executed and returns to the interrupt handler.
+6. The interrupt handler restores the process context from memory.
+7. The CPU is switched back to user mode.
+8. The interrupt handler makes a jump to return to the user space application that called it.
+
+
+Task 1(3):
+1. Ready: Receives the instruction to execute the program. Program is loaded into memory, ready to be executed. 
+2. Running: The program is being executed by the CPU. After execution, the CPU might de-schedule and return to the 'Ready' state or transfer to 'Blocked' state to wait for I/O
+3. Blocked: The program is waiting for I/O and it will back to 'Ready' state
+
+
+
+Task 2(1):
+In user mode, only a limited set of instructions are allowed to be executed. This to prevent the CPU from being destroyed by the user. In kernel mode, there are no restrictions in executing a program, it could access all devices, drivers, as well as memory. When an interrupt happens, it switches from user mode to kernel mode. Do not have access to hardware in user mode. 
+
+
+Task 2(2):
+to enable CPU to switch from user mode to kernel mode
